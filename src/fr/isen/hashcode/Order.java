@@ -7,9 +7,9 @@ import java.util.Vector;
  */
 public class Order {
     public Point destination;
-    public Vector<Integer> list;
+    public Vector<ProductType> list;
 
-    public Order(Point destination, Vector<Integer> list) {
+    public Order(Point destination, Vector<ProductType> list) {
         this.destination = destination;
         this.list = list;
     }

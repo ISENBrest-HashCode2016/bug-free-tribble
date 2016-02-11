@@ -8,9 +8,9 @@ import java.util.Vector;
 public class Warehouse {
 
     public Point position;
-    public Vector<Integer> stock; // ProductType IDs
+    public Vector<ProductType> stock; // ProductType IDs
 
-    public Warehouse(Point position, Vector<Integer> stock) {
+    public Warehouse(Point position, Vector<ProductType> stock) {
         this.position = position;
         this.stock = stock;
     }

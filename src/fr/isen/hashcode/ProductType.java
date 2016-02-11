@@ -7,9 +7,9 @@ import java.util.Vector;
  */
 public class ProductType {
     public int weight;
-    public Vector<Integer> providers; // Warehouse IDs
+    public Vector<Warehouse> providers; // Warehouse IDs
 
-    public ProductType(int weight, Vector<Integer> providers) {
+    public ProductType(int weight, Vector<Warehouse> providers) {
         this.weight = weight;
         this.providers = providers;
     }
