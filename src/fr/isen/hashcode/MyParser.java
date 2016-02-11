@@ -15,6 +15,8 @@ import java.util.stream.Stream;
  */
 public class MyParser {
 
+    public int nbrProducts;
+    public int nrbWarehouse;
     public int maximumLoad;
     public int deadline;
     public int row;
@@ -41,7 +43,29 @@ public class MyParser {
 
             // Second line
             line = br.readLine();
+            this.nbrProducts = Integer.parseInt(line);
+
+            // Third line
+            line = br.readLine();
             this.productType = line.split("\\s+");
+
+            // Fourth line
+            line = br.readLine();
+            this.productWeigh = line.split("\\s+");
+
+            // 5, moving to warehouses
+            line = br.readLine();
+            splited = line.split("\\s+");
+            this.nrbWarehouse = Integer.parseInt(splited[0]);
+
+            for (int i = 0; i< this.nrbWarehouse; i++){
+                line = br.readLine();
+                splited = line.split("\\s+");
+                Point point = new Point(Integer.parseInt(splited[0]),Integer.parseInt(splited[1]));
+                warehouses[warehouses.length] = new Warehouse(point);
+            }
+
+
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
