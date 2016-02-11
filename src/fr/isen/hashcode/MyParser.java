@@ -29,7 +29,7 @@ public class MyParser {
     public MyParser() {
         String[] splited;
 
-        try (BufferedReader br = new BufferedReader(new FileReader("/Users/pierrezemb/Downloads/busy_day.in"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("res/busy_day.in"))) {
 
             String line = br.readLine();
 
