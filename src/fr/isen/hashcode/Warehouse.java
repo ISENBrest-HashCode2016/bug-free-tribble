@@ -5,11 +5,9 @@ package fr.isen.hashcode;
  */
 public class Warehouse {
 
-    public int x;
-    public int y;
+    Point position;
 
-    public Warehouse(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Warehouse(Point position) {
+        this.position = position;
     }
 }
